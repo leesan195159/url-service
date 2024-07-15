@@ -19,25 +19,25 @@
 
 ## 설치 및 실행 방법
 
-##1. 환경 설정
+1. 환경 설정
    requirements.txt를 설치합니다.
    ```bash
    pip install -r requirements.txt
    ```
-##2. 데이터베이스 설정
+2. 데이터베이스 설정
   app.database.py와 alembic.ini 파일에서 데이터베이스 연결 정보를 수정합니다.
 
-##3. 데이터베이스 마이그레이션
+3. 데이터베이스 마이그레이션
    ```bash
    alembic upgrade head
    ```
 
-##4 애플리케이션 실행
+4 애플리케이션 실행
    ```bash
    uvicorn app.main:app --reload
    ```
 
-##5 API 문서 확인
+5 API 문서 확인
   웹 브라우저에서 http://localhost:8000/docs로 접속하여 API 문서를 확인하고, API를 테스트할 수 있습니다.
 
 
